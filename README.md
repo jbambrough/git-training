@@ -10,16 +10,6 @@ This repository is a sandbox project for learning and improving Git techniques
 
 Have Git installed on your local machine
 
-## Resources
-
-Git Visualization: `https://git-school.github.io/visualizing-git`
-
-Great tutorials: `https://www.atlassian.com/git/tutorials`
-
-The anatomy of a Git commit: `https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html`
-
-Pluralsight course on rewriting Git history: `https://app.pluralsight.com/library/courses/rewriting-git-history`
-
 ## Terminology
 
 - `local` - dfdf
@@ -51,7 +41,7 @@ Pluralsight course on rewriting Git history: `https://app.pluralsight.com/librar
 
 SHA1 hash:
 
-- Each asset has it's own unique SHA1 hash
+- Each asset has it's own unique SHA-1 hash
 - Example: f4f78b319c308600eab015a5d6529add21660dc1
 - 40 characters long
 - Take meta-info as the input (including commit message, committer, commit date, and tree hash) and produces a SHA1 hash
@@ -106,7 +96,7 @@ See differences of one file:
 git diff /path/to/myfile.js
 ```
 
-Rebase master branch onto my working branch:
+Rebase master branch onto my working branch (from your working branch):
 
 ```
 git rebase master
@@ -118,3 +108,13 @@ Interactive rebase from a given commit (couple of options listed below):
 git rebase -i master
 git rebase -i 790dd94
 ```
+
+## Resources
+
+Git Visualization: `https://git-school.github.io/visualizing-git`
+
+Great tutorials: `https://www.atlassian.com/git/tutorials`
+
+The anatomy of a Git commit: `https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html`
+
+Pluralsight course on rewriting Git history: `https://app.pluralsight.com/library/courses/rewriting-git-history`
