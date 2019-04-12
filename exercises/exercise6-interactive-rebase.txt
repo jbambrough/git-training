@@ -1,3 +1,6 @@
+Perform an Interactive Rebase:
+
+Make a few related changes to index.html:
 (make udpate)
 git commit -m "message 1"
 (make udpate)
@@ -5,4 +8,37 @@ git commit -m "message 2"
 (make udpate)
 git commit -m "message 3"
 
+----------------------
+SQUASH:
 git rebase -i HEAD~3
+
+<edit instructions, include squash for commits you want to combine>
+
+<you will then be prompted for the NEW commit message (delete the ones you don't want)>
+---------------------
+
+(make udpate by adding a comment or log)
+git commit -m "add logging"
+(make udpate)
+git commit -m "message 2"
+(make udpate by adding a comment or log)
+git commit -m "added more logging"
+
+---------------------
+DROP:
+git rebase -i master
+
+<edit instructions, include "drop" for the logging commits>
+
+---------------------
+Rebase against master branch:
+
+// Interactive rebase master onto your checked out branch
+git rebase -i master
+
+<play the instructions, at this point the rebase stops>
+
+<make changes, stage them, then commit them>
+
+// Can continue the rebase like so
+git rebase --continue

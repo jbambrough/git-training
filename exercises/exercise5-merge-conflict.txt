@@ -1,2 +1,17 @@
 Resolve a merge conflict:
 
+1. Check out the branch you created the Pull Request for in Exercise #3
+
+2. >git rebase master
+
+3. You should see a Merge Conflict now
+
+4. Resolve the conflict by deleting the code you don't want
+
+5. Stage your code
+
+6. Commit your code
+
+7. Push your code
+
+8. You should now see your Merge Conflict resolved in your Pull Request

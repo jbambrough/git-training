@@ -4,6 +4,10 @@ Introduction
     What you will learn
     What you won't learn
 
+Git:
+    CVS, SVN
+    Distributed (work offline)
+
 Using Git with a GUI
 
 Exercise #1: git diff EOL
@@ -28,7 +32,10 @@ Branching workflow
 
 Exercise #2: git visualization
 
-Exercise #3: git workflow
+Git Merge:
+    Take changes from one branch and put them into a different branch
+
+Exercise #3: build feature
 
 DEMO: VS Code git commands
     Diff view
@@ -38,6 +45,7 @@ DEMO: VS Code git commands
 Stash
     What is it, why would I use it?
     Store changes
+    Queue: pop vs. apply
     View my stored changes
     Get my stored changes
 
@@ -45,25 +53,39 @@ Exercise #4: git stash
 
 Rebase
     What is it, why would you use it?
+        Flattens history
+    Pull Requests -> race conditions
     >git rebase master
+    Rebase vs. Merge
 
-Exercise #4: Resolve merge conflict
+Exercise #5: Resolve merge conflict
 
 Rewriting Git history
     What is it?
     Why would I want to do it?
     Interactive Rebase
+        (squash, drop, )
 
 DEMO: Interactive rebase
     Squash
     Drop
 
-Exercise #4: interactive rebase
+Exercise #6: interactive rebase
 
 Git hooks overview
     Client Side vs. Server Side
     Client flow:
     Server flow:
     Use cases
+    --no-verify
 
-Exercise #5: create your first git hook
+DEMO:
+    commit-msg
+    pre-commit    
+
+Exercise #7: create your first git hook
+
+CI/CD:
+    Slack integration
+    Jenkins integration
+        Github plugin

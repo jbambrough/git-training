@@ -11,28 +11,29 @@ This repository is a sandbox project for learning and improving Git techniques
 - Basic understanding of Git commands
 - Have Git installed on your local machine
 - Have Visual Studio Code installed
+- Have Node.js installed
 
 ## Terminology
 
 - `local` - your laptop
 - `remote` - server where the repository is stored
-- `tracked / untracked` - dfdf
+- `tracked / untracked` - staged for a commit vs. unstaged
 - `stage` - step before a commit
-- `modified` - dfdf
-- `branch` - dfdf
+- `modified` - pending change for an already committed file
+- `branch` - working copy of code, typically used when you are creating a new feature or fixing a bug
 - `HEAD` - special pointer that points to the local branch you’re currently on
 - `SHA1 hash` - example: f4f78b319c308600eab015a5d6529add21660dc1. Unique identifier. Takes some input, produces a consistent output
-- `Pull Request (PR)` - dfdf
-- `Merge Conflict` - dfdf
+- `Pull Request (PR)` - tool to merge your code to another branch
+- `Merge Conflict` - bad stuff. Attempting to update the same line(s) of code that has been modified since you branched
 - `rebase` - replays a set of commits on top of a specific base commit
 - `interactive rebase` - a rebase that allows you to control how the changes are replayed
 
 ## Common Commands
 
-- `git clone` - dfdf
-- `git fetch` - sdfasdf
+- `git clone` - copy repository down to your local
+- `git fetch` - get changes from remote
 - `git pull` - fetch plus merge
-- `git push` - dfdf
+- `git push` - put your local committed changes to the remote
 - `git reset` - tool for undoing changes
 - `git diff` - show changes between commits
 - `git revert` - show changes between commits
@@ -48,7 +49,7 @@ SHA1 hash:
 - Each asset has it's own unique SHA-1 hash
 - Example: f4f78b319c308600eab015a5d6529add21660dc1
 - 40 characters long
-- Take meta-info as the input (including commit message, committer, commit date, and tree hash) and produces a SHA1 hash
+- Take meta-info as the input (including commit message, committer, commit date, and tree hash) and produces a SHA-1 hash
 
 ## Practical Git commands
 
@@ -154,3 +155,5 @@ The anatomy of a Git commit: `https://blog.thoughtram.io/git/2014/11/18/the-anat
 Pluralsight course on rewriting Git history: `https://app.pluralsight.com/library/courses/rewriting-git-history`
 
 Pre-commit javascript module: `https://www.npmjs.com/package/pre-commit`
+
+Git hooks: `https://githooks.com`

@@ -1,8 +1,5 @@
-(make udpate)
-git commit -m "message 1"
-(make udpate)
-git commit -m "message 2"
-(make udpate)
-git commit -m "message 3"
+Git Hooks:
 
-git rebase -i HEAD~3
+Create a hook of your choice!
+
+Show it off to the world
