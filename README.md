@@ -17,14 +17,14 @@ This repository is a sandbox project for learning and improving Git techniques
 
 - `local` - your laptop
 - `remote` - server where the repository is stored
-- `tracked / untracked` - staged for a commit vs. unstaged
-- `stage` - step before a commit
-- `modified` - pending change for an already committed file
+- `tracked / untracked` - file/blob is _"tracked"_ by Git (untracked is a file that has never been committed)
+- `stage` - mark change to be committed (if you make additional changes after changing, you must again stage the newer changes)
+- `modified` - a tracked file that has been modified from the last revision
 - `branch` - working copy of code, typically used when you are creating a new feature or fixing a bug
-- `HEAD` - special pointer that points to the local branch you’re currently on
-- `SHA1 hash` - example: f4f78b319c308600eab015a5d6529add21660dc1. Unique identifier. Takes some input, produces a consistent output
-- `Pull Request (PR)` - tool to merge your code to another branch
-- `Merge Conflict` - bad stuff. Attempting to update the same line(s) of code that has been modified since you branched
+- `HEAD` - special pointer that refers to the _latest commit_ of the checked out branch
+- `SHA1 hash` - example: f4f78b319c308600eab015a5d6529add21660dc1. SHA1 hash generated from the delta of the commit.
+- `Pull Request (PR)` - This is a GitHub-only concept, which refers to a pending merge on the remote which can be reviewed before merging remotely.
+- `Merge Conflict` - When merging, Git failed to automatically resolve the delta of the branches being merged, which requires human intervention
 - `rebase` - replays a set of commits on top of a specific base commit
 - `interactive rebase` - a rebase that allows you to control how the changes are replayed
 
@@ -53,7 +53,7 @@ SHA1 hash:
 
 ## Practical Git commands
 
-View the state of your code:
+View the state of your branch:
 
 ```
 git status
@@ -71,7 +71,7 @@ View a specific commit:
 git show 790dd94
 ```
 
-Create a new branch:
+Create (and checkout) a new branch:
 
 ```
 git checkout -b US12345_my_cool_feature
@@ -97,11 +97,15 @@ git branch -d my_terrible_branch
 
 I screwed everything up! Get me outta here:
 
+(WARNING: this can result in unrecoverable data loss!)
+
 ```
 git reset --hard
 ```
 
 Checkout out a specific commit (you need to know the hash):
+
+(WARNING: you need to either create a branch from this point, or checkout back to a branch before attempting to make commits, this mode is only for _viewing_ the checked out commit)
 
 ```
 git checkout 790dd94
@@ -113,25 +117,40 @@ Stash your changes:
 git stash
 ```
 
-Recover your latest stashed changes:
+Recover (and _delete_ the stash) your latest stashed changes:
 
 ```
 git stash pop
 ```
 
+Recover (and _keep_ the stash) your latest stashed changes:
+
+```
+git stash apply
+```
+
 See all differences:
 
 ```
-git diff .
+git diff
 ```
 
 See differences of one file:
 
 ```
-git diff /path/to/myfile.js
+git diff -- /path/to/myfile.js
 ```
 
-Rebase master branch onto my working branch (from your working branch):
+See differences of one file compared to another branch/hash (remove file to see full delta):
+
+```
+git diff <ref> -- /path/to/myfile.js
+```
+
+
+Rebase current branch _onto_ master:
+
+(This stores any commits on the current branch that are not in master in memory, then fast-forwards your branch to master, then replays the stored commits on top)
 
 ```
 git rebase master
@@ -146,14 +165,16 @@ git rebase -i 790dd94
 
 ## Resources
 
-Git Visualization: `https://git-school.github.io/visualizing-git`
+Learn Git Branching (by doing): https://learngitbranching.js.org
 
-Great tutorials: `https://www.atlassian.com/git/tutorials`
+Git Visualization: https://git-school.github.io/visualizing-git
 
-The anatomy of a Git commit: `https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html`
+Great tutorials: https://www.atlassian.com/git/tutorials
 
-Pluralsight course on rewriting Git history: `https://app.pluralsight.com/library/courses/rewriting-git-history`
+The anatomy of a Git commit: https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html
 
-Pre-commit javascript module: `https://www.npmjs.com/package/pre-commit`
+Pluralsight course on rewriting Git history: https://app.pluralsight.com/library/courses/rewriting-git-history
 
-Git hooks: `https://githooks.com`
+Pre-commit javascript module: https://www.npmjs.com/package/pre-commit
+
+Git hooks: https://githooks.com
