@@ -1,1 +1,26 @@
-Make a feature enhancement and create a Pull Request
+Make a feature enhancement
+
+1. From command line clone https://github.com/jbambrough/git-training
+    >git clone https://github.com/jbambrough/git-training
+
+2. Navigate to the project folder
+
+3. Create new feature branch using this naming convention:
+        <first name initial>_<last name>_feature_US1234
+        example: j_bambrough_feature_US1234
+
+4. Open index.html from project root
+
+5. Modify index.html by chaging the name in the h1 tag to your name
+
+6. View changes in your code
+
+7. Stage your change in index.html
+
+8. Commit your change
+
+9. Push your change
+
+10. Create a Pull Request of your feature branch against the master branch
+
+11. Are there any merge conflicts?

@@ -49,6 +49,15 @@ Rebase
 
 Exercise #4: Resolve merge conflict
 
+Rewriting Git history
+    What is it?
+    Why would I want to do it?
+    Interactive Rebase
+
+DEMO: Interactive rebase
+    Squash
+    Drop
+
 Exercise #4: interactive rebase
 
 Git hooks overview

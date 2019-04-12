@@ -6,19 +6,21 @@ Sandbox repository for Git Training
 
 This repository is a sandbox project for learning and improving Git techniques
 
-## Setup
+## Prequisites
 
-Have Git installed on your local machine
+- Basic understanding of Git commands
+- Have Git installed on your local machine
+- Have Visual Studio Code installed
 
 ## Terminology
 
 - `local` - your laptop
 - `remote` - server where the repository is stored
 - `tracked / untracked` - dfdf
-- `stage` - dfdf
+- `stage` - step before a commit
 - `modified` - dfdf
 - `branch` - dfdf
-- `HEAD` - dfdf
+- `HEAD` - special pointer that points to the local branch you’re currently on
 - `SHA1 hash` - example: f4f78b319c308600eab015a5d6529add21660dc1. Unique identifier. Takes some input, produces a consistent output
 - `Pull Request (PR)` - dfdf
 - `Merge Conflict` - dfdf
@@ -102,6 +104,18 @@ Checkout out a specific commit (you need to know the hash):
 
 ```
 git checkout 790dd94
+```
+
+Stash your changes:
+
+```
+git stash
+```
+
+Recover your latest stashed changes:
+
+```
+git stash pop
 ```
 
 See all differences:

@@ -1,1 +1,49 @@
-Make a feature enhancement and create a Pull Request
+Using Git stash:
+
+1. From project root, check out the master branch
+
+2. You are tasked to add some content to the home web page. Check out the master branch then create a feature 
+   branch for this user story: 
+    US25647_add_git_commands
+
+3. Make sure you have your feature branch checked out
+
+4. Add the following below the <h1> tag:
+
+    <ul>
+        <li>git status</li>
+        <li>git diff</li>
+        <li>git add</li>
+        <li>git commit</li>
+    </ul>
+
+5. Your manager alerted you that your product owner wants to remove the "Under Construction" from the web page.
+   You don't want to lose your work so stash your changes then create a Bug Fix branch for the new work:
+    FIX948894_remove_construction
+
+6. Remove your "Under Construction" container
+
+7. Stage and commit your change
+
+8. Check out your original feature branch you created
+
+9. Recover your stashed code. You should see your original work
+
+10. The Acceptance Criteria changed in your original story. You're not sure if you'll need this unordered list,
+    so stash these changes just in case
+
+11. According to new Acceptance Criteria you need to change the title of the web page to "Git Overview".
+    Make this change
+
+12. Oops... the product owner decided they against removing the "Under Construction". You will need another
+    bug fix branch. In the meantime, stash your changes. Then created check out the master branch, then create
+    the following Bug Fix branch:
+     FIX6589745_add_construction
+
+13. Add back in the "Under Construction" content
+
+14. Stage and commit your changes
+
+15. Check out your original feature branch
+
+16. Re-apply your original title change from the stash
