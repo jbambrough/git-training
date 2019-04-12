@@ -1,0 +1,19 @@
+{
+    "name": "git-training",
+    "version": "1.0.0",
+    "description": "Git Training",
+    "author": "Jimbo",
+    "private": false,
+    "scripts": {
+        "test": "mocha"
+    },
+    "pre-commit": [
+        "test"
+    ],
+    "dependencies": {
+        "mocha": "^5.2.0"
+    },
+    "devDependencies": {
+        "pre-commit": "^1.2.2"
+    }
+}

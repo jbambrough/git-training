@@ -1,0 +1,32 @@
+Git Visualization tool:
+https://git-school.github.io/visualizing-git
+
+Scenario 1, team workflow no rebase:
+        git checkout -b myfeature
+        git commit -m "some changes"
+        git commit -m "more changes"
+        git checkout master
+        git checkout -b bugfix
+        git commit -m "fixing stuff"
+        git checkout master
+        git merge bugfix
+        git checkout master
+        git merge myfeature
+        git log
+
+Scenario 2, team workflow with rebase:
+        git checkout -b myfeature
+        git commit -m "some changes"
+        git commit -m "more changes"
+        git checkout master
+        git checkout -b bugfix
+        git commit -m "fixing stuff"
+        git checkout master
+        git merge bugfix
+        git checkout myfeature
+        git rebase master
+        git checkout master
+        git merge myfeature
+        git log
+
+        

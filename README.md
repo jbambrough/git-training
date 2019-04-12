@@ -12,8 +12,8 @@ Have Git installed on your local machine
 
 ## Terminology
 
-- `local` - dfdf
-- `remote` - dfdf
+- `local` - your laptop
+- `remote` - server where the repository is stored
 - `tracked / untracked` - dfdf
 - `stage` - dfdf
 - `modified` - dfdf
@@ -28,14 +28,16 @@ Have Git installed on your local machine
 ## Common Commands
 
 - `git clone` - dfdf
-- `git pull` - dfd
 - `git fetch` - sdfasdf
+- `git pull` - fetch plus merge
 - `git push` - dfdf
-- `git reset` - dfdf
-- `git diff` - dfdf
-- `git stash` - dfdf
-- `git merge` - dfdf
-- `git rebase` - dfdf
+- `git reset` - tool for undoing changes
+- `git diff` - show changes between commits
+- `git revert` - show changes between commits
+- `git stash` - temporarily store your working code
+- `git merge` - apply all unique commits from branch A into branch B in one commit with final result
+- `git rebase` - gets all unique commits from both branches and applies them one by one
+- `git log` - view git history
 
 ## The anatomy of a Git commit
 
@@ -60,10 +62,28 @@ Quick view of commit history:
 git log --oneline
 ```
 
+View a specific commit:
+
+```
+git show 790dd94
+```
+
 Create a new branch:
 
 ```
 git checkout -b US12345_my_cool_feature
+```
+
+Which branch do I have checked out?:
+
+```
+git branch
+```
+
+How do I switch branches?:
+
+```
+git checkout branch_name
 ```
 
 Delete a branch:
@@ -118,3 +138,5 @@ Great tutorials: `https://www.atlassian.com/git/tutorials`
 The anatomy of a Git commit: `https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html`
 
 Pluralsight course on rewriting Git history: `https://app.pluralsight.com/library/courses/rewriting-git-history`
+
+Pre-commit javascript module: `https://www.npmjs.com/package/pre-commit`

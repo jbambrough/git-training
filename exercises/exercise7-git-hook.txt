@@ -1,0 +1,8 @@
+(make udpate)
+git commit -m "message 1"
+(make udpate)
+git commit -m "message 2"
+(make udpate)
+git commit -m "message 3"
+
+git rebase -i HEAD~3

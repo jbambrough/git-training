@@ -1,0 +1,60 @@
+
+Introduction
+    Who should attend this course
+    What you will learn
+    What you won't learn
+
+Using Git with a GUI
+
+Exercise #1: git diff EOL
+
+Basic git commands
+    clone
+    pull
+    add
+    commit
+    push
+    checkout
+
+Git commit: SHA-1 hash
+    https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html
+
+Github
+    Free for public account
+    Alternatives: Bitbucket
+
+Branching workflow
+    Feature or Bug Fix branch
+
+Exercise #2: git visualization
+
+Exercise #3: git workflow
+
+DEMO: VS Code git commands
+    Diff view
+    Stage a file
+    Revert a change
+
+Stash
+    What is it, why would I use it?
+    Store changes
+    View my stored changes
+    Get my stored changes
+
+Exercise #4: git stash    
+
+Rebase
+    What is it, why would you use it?
+    >git rebase master
+
+Exercise #4: Resolve merge conflict
+
+Exercise #4: interactive rebase
+
+Git hooks overview
+    Client Side vs. Server Side
+    Client flow:
+    Server flow:
+    Use cases
+
+Exercise #5: create your first git hook

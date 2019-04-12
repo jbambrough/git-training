@@ -1,0 +1,3 @@
+let getStuff = () => {
+    return 'stuff';
+}

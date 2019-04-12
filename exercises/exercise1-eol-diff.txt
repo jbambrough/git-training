@@ -1,0 +1,17 @@
+In git training project:
+
+-Open folder in VS Code
+
+-Open index.html
+
+-View changes in "Pending Changes" view in VS Code
+
+-From command prompt: git status
+    Do you see any changes?
+
+-Change format from LF to CRLF (lower right tray) and save file
+
+-View changes in "Pending Changes" view in VS Code
+
+-From command prompt: git status
+    Do you see any changes now?

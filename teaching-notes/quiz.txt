@@ -1,0 +1,20 @@
+
+What is a pull vs. fetch?
+
+What is a merge?
+
+What is a rebase?
+
+How do you throw away all your local changes and start over?
+
+List an example of when you would do a merge vs. rebase? Explain why
+
+What is a cherry pick, and why would you use it?
+
+What is an interactive rebase?
+
+How is a rebase different than in interactive rebase?
+
+How can I pull changes from someone elses branch into your branch? Why would I want to do that?
+
+

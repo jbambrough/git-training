@@ -1,0 +1,32 @@
+-------- Rebase concept ---------
+
+Rebase is a process
+
+---------------------------------
+
+// Interactive rebase master onto your checked out branch
+git rebase -i master
+
+<play the instructions, at this point the rebase stops>
+
+<make changes, stage them, then commit them>
+
+// Can continue the rebase like so
+git rebase --continue
+
+----------------------
+SQUASH:
+git rebase -i master
+
+<edit instructions, include squash for commits you want to combine>
+
+<you will then be prompted for the NEW commit message (delete the ones you don't want)>
+
+---------------------
+DROP:
+git rebase -i master
+
+<edit instructions, include "drop" for commits you want to combine>
+
+
+
