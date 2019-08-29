@@ -129,6 +129,12 @@ Recover (and _keep_ the stash) your latest stashed changes:
 git stash apply
 ```
 
+View changes for a given stash (without applying it):
+
+```
+git stash show -p stash@{1}
+```
+
 See all differences:
 
 ```
@@ -146,7 +152,6 @@ See differences of one file compared to another branch/hash (remove file to see 
 ```
 git diff <ref> -- /path/to/myfile.js
 ```
-
 
 Rebase current branch _onto_ master:
 
